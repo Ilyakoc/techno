@@ -32,7 +32,7 @@
 	            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="height: 13mm;">
 	                <tr>
 	                    <td valign="top">
-	                        <div>Московский филиал АО КБ "МОДУЛЬБАНК"</div>
+	                        <div>ПАО "Банк Уралсиб"</div>
 	                    </td>
 	                </tr>
 	                <tr>
@@ -46,27 +46,27 @@
 	            <div>БИK</div>
 	        </td>
 	        <td rowspan="2" style="vertical-align: top; width: 60mm; border: solid 1px #333;">
-	            <div style=" height: 7mm; line-height: 7mm; vertical-align: middle;">044525092</div>
-	            <div>30101810645250000092</div>
+	            <div style=" height: 7mm; line-height: 7mm; vertical-align: middle;">044525787</div>
+	            <div>30101810100000000787</div>
 	        </td>
 	    </tr>
 	    <tr>
 	        <td style="width: 25mm; border: solid 1px #333;">
-	            <div>Сч. №</div>
+	            <div>Корр.Сч. №</div>
 	        </td>
 	    </tr>
 	    <tr>
 	        <td style="min-height:6mm; height:auto; width: 50mm; border: solid 1px #333;">
-	            <div>ИНН 5402065230</div>
+	            <div>ИНН 9723130600</div>
 	        </td>
 	        <td style="min-height:6mm; height:auto; width: 55mm; border: solid 1px #333;">
-	            <div>КПП 540201001</div>
+	            <div>КПП 772301001</div>
 	        </td>
 	        <td rowspan="2" style="min-height:19mm; height:auto; vertical-align: top; width: 25mm; border: solid 1px #333;">
-	            <div>Сч. №</div>
+	            <div>Р/С №</div>
 	        </td>
 	        <td rowspan="2" style="min-height:19mm; height:auto; vertical-align: top; width: 60mm; border: solid 1px #333;">
-	            <div>40702810170010260909</div>
+	            <div>40702810600290002056</div>
 	        </td>
 	    </tr>
 	    <tr>
@@ -75,7 +75,7 @@
 	            <table border="0" cellpadding="0" cellspacing="0" style="height: 13mm; width: 105mm;">
 	                <tr>
 	                    <td valign="top">
-	                        <div>ООО "ЗЕВС"</div>
+	                        <div>ООО "СИРИУС"</div>
 	                    </td>
 	                </tr>
 	                <tr>
@@ -103,8 +103,9 @@
 	        </td>
 	        <td>
 	            <div style="font-weight:bold;  padding-left:2px;">
-	                ООО "ЗЕВС" ИНН 5402065230, КПП 540201001<br>
-					<span style="font-weight: normal;">141402, Российская Федерация, г. Москва, Вашутинское шоссе, вл46<br> тел.: +7 (495) 108-71-22</span>
+	                ООО "СИРИУС" ИНН 9723130600, КПП 772301001<br>
+					<span style="font-weight: normal;">109428, Российская Федерация, г. Москва, 1-й Вязовский проезд. д.4, ст.3
+<br> тел.: +7 (495) 103-16-91</span>
 				</div>
 	        </td>
 	    </tr>

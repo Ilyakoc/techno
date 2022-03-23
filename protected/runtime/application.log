@@ -9128,3 +9128,2053 @@ in /home/c/cl30234/techno.ru/public_html/index.php (52)
 2022/03/06 15:41:42 [warning] [application] Не удалось присвоить небезопасный атрибут "id" класса "CImage".
 in /home/c/cl30234/techno.ru/public_html/protected/modules/admin/controllers/ShopController.php (295)
 in /home/c/cl30234/techno.ru/public_html/index.php (52)
+2022/03/07 21:57:23 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1044] Access denied for user 'cc25985_techno'@'localhost' to database 'cl30234_techno' in /home/c/cc25985/yii/yiilite.php:8742
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(8714): CDbConnection->open()
+#1 /home/c/cc25985/yii/yiilite.php(8703): CDbConnection->setActive(true)
+#2 /home/c/cc25985/yii/yiilite.php(1104): CDbConnection->init()
+#3 /home/c/cc25985/yii/yiilite.php(1361): CModule->getComponent('db')
+#4 /home/c/cc25985/yii/yiilite.php(7759): CApplication->getDb()
+#5 /home/c/cc25985/yii/yiilite.php(7776): CActiveRecord->getDbConnection()
+#6 /home/c/cc25985/yii/yiilite.php(8282): CActiveRecord->getCommandBuilder()
+#7 /home/c/cc25985/public_html/protected/components/DApi.php(239): CActiveRecord->exists('hidden>0 AND or...')
+#8 /home/c/cc25985/public_html/protected/components/DApi.php(77): DApi->_registerTreemenu()
+#9 /home/c/cc25985/yii/yiilite.php(1104): DApi->init()
+#10 /home/c/cc25985/yii/yiilite.php(1171): CModule->getComponent('d')
+#11 /home/c/cc25985/yii/yiilite.php(1228): CModule->preloadComponents()
+#12 /home/c/cc25985/yii/yiilite.php(56): CApplication->__construct(Array)
+#13 /home/c/cc25985/yii/yiilite.php(48): YiiBase::createApplication('CWebApplication', '/home/c/cc25985...')
+#14 /home/c/cc25985/public_html/index.php(52): YiiBase::createWebApplication('/home/c/cc25985...')
+#15 {main}
+REQUEST_URI=/
+---
+2022/03/08 05:46:13 [error] [exception.CException] CException: Файл не найден in /home/c/cc25985/public_html/protected/models/CImage.php:85
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(8046): CImage->afterDelete()
+#1 /home/c/cc25985/public_html/protected/models/Event.php(168): CActiveRecord->delete()
+#2 /home/c/cc25985/yii/yiilite.php(8046): Event->afterDelete()
+#3 /home/c/cc25985/public_html/protected/modules/admin/controllers/EventController.php(125): CActiveRecord->delete()
+#4 [internal function]: EventController->actionDelete('2')
+#5 /home/c/cc25985/yii/yiilite.php(4189): ReflectionMethod->invokeArgs(Object(EventController), Array)
+#6 /home/c/cc25985/yii/yiilite.php(4206): CAction->runWithParamsInternal(Object(EventController), Object(ReflectionMethod), Array)
+#7 /home/c/cc25985/yii/yiilite.php(3720): CInlineAction->runWithParams(Array)
+#8 /home/c/cc25985/yii/yiilite.php(7049): CController->runAction(Object(CInlineAction))
+#9 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#10 /home/c/cc25985/yii/yiilite.php(4098): CFilter->filter(Object(CFilterChain))
+#11 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#14 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/c/cc25985/yii/yiilite.php(1799): CController->run('delete')
+#16 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('admin/event/del...')
+#17 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#18 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#19 {main}
+REQUEST_URI=/cp/event/delete/2
+HTTP_REFERER=http://aeg-technic.ru/cp/event/index
+---
+2022/03/08 05:46:26 [error] [exception.CException] CException: Файл не найден in /home/c/cc25985/public_html/protected/models/CImage.php:85
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(8046): CImage->afterDelete()
+#1 /home/c/cc25985/public_html/protected/models/Event.php(168): CActiveRecord->delete()
+#2 /home/c/cc25985/yii/yiilite.php(8046): Event->afterDelete()
+#3 /home/c/cc25985/public_html/protected/modules/admin/controllers/EventController.php(125): CActiveRecord->delete()
+#4 [internal function]: EventController->actionDelete('4')
+#5 /home/c/cc25985/yii/yiilite.php(4189): ReflectionMethod->invokeArgs(Object(EventController), Array)
+#6 /home/c/cc25985/yii/yiilite.php(4206): CAction->runWithParamsInternal(Object(EventController), Object(ReflectionMethod), Array)
+#7 /home/c/cc25985/yii/yiilite.php(3720): CInlineAction->runWithParams(Array)
+#8 /home/c/cc25985/yii/yiilite.php(7049): CController->runAction(Object(CInlineAction))
+#9 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#10 /home/c/cc25985/yii/yiilite.php(4098): CFilter->filter(Object(CFilterChain))
+#11 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#14 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/c/cc25985/yii/yiilite.php(1799): CController->run('delete')
+#16 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('admin/event/del...')
+#17 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#18 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#19 {main}
+REQUEST_URI=/cp/event/delete/4
+HTTP_REFERER=http://aeg-technic.ru/cp/event/index
+---
+2022/03/08 05:46:41 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "gazonokosilki". in /home/c/cc25985/yii/yiilite.php:3818
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(3700): CController->missingAction('gazonokosilki')
+#1 /home/c/cc25985/yii/yiilite.php(1799): CController->run('gazonokosilki')
+#2 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('catalog/gazonok...')
+#3 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#4 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/gazonokosilki
+---
+2022/03/08 05:47:26 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=502
+---
+2022/03/08 05:47:29 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=503
+---
+2022/03/08 05:47:32 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=505
+---
+2022/03/08 05:47:34 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=504
+---
+2022/03/08 05:53:20 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=457
+---
+2022/03/08 05:53:50 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=456
+---
+2022/03/08 05:54:44 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=453
+---
+2022/03/08 05:54:47 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=455
+---
+2022/03/08 05:54:48 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=464
+---
+2022/03/08 05:54:50 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=466
+---
+2022/03/08 05:54:54 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=467
+---
+2022/03/08 05:54:56 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=468
+---
+2022/03/08 05:55:55 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=487
+---
+2022/03/08 05:56:11 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=485
+---
+2022/03/08 05:56:18 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=483
+---
+2022/03/08 05:56:18 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=486
+---
+2022/03/08 05:56:19 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=488
+---
+2022/03/08 05:56:20 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=488
+---
+2022/03/08 05:56:21 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=490
+---
+2022/03/08 05:56:23 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=454
+---
+2022/03/08 05:56:53 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=389
+---
+2022/03/08 05:56:55 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=391
+---
+2022/03/08 05:56:56 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=391
+---
+2022/03/08 05:57:45 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=398
+---
+2022/03/08 05:57:46 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=511
+---
+2022/03/08 05:57:48 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=393
+---
+2022/03/08 05:57:49 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=393
+---
+2022/03/08 05:57:52 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=394
+---
+2022/03/08 05:57:54 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=396
+---
+2022/03/08 05:57:55 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=395
+---
+2022/03/08 05:57:56 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=392
+---
+2022/03/08 05:57:57 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=507
+---
+2022/03/08 05:58:12 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=390
+---
+2022/03/08 15:13:54 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "/robots.txt". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('/robots.txt')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=//robots.txt
+---
+2022/03/08 15:13:55 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "/.well-known/security.txt". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('/.well-known/se...')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=//.well-known/security.txt
+---
+2022/03/09 12:59:35 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "wordpress". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('wordpress')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/wordpress
+HTTP_REFERER=http://aeg-technic.ru/wordpress
+---
+2022/03/09 12:59:36 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "Wordpress". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('Wordpress')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/Wordpress
+HTTP_REFERER=http://aeg-technic.ru/Wordpress
+---
+2022/03/09 12:59:37 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "WORDPRESS". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('WORDPRESS')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/WORDPRESS
+HTTP_REFERER=http://aeg-technic.ru/WORDPRESS
+---
+2022/03/09 12:59:37 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "WordPress". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('WordPress')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/WordPress
+HTTP_REFERER=http://aeg-technic.ru/WordPress
+---
+2022/03/09 12:59:38 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "wp". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('wp')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/wp
+HTTP_REFERER=http://aeg-technic.ru/wp
+---
+2022/03/09 12:59:38 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "Wp". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('Wp')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/Wp
+HTTP_REFERER=http://aeg-technic.ru/Wp
+---
+2022/03/09 12:59:38 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "WP". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('WP')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/WP
+HTTP_REFERER=http://aeg-technic.ru/WP
+---
+2022/03/09 12:59:39 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "old". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('old')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/old
+HTTP_REFERER=http://aeg-technic.ru/old
+---
+2022/03/09 12:59:39 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "Old". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('Old')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/Old
+HTTP_REFERER=http://aeg-technic.ru/Old
+---
+2022/03/09 12:59:40 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "OLD". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('OLD')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/OLD
+HTTP_REFERER=http://aeg-technic.ru/OLD
+---
+2022/03/09 12:59:40 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "oldsite". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('oldsite')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/oldsite
+HTTP_REFERER=http://aeg-technic.ru/oldsite
+---
+2022/03/09 12:59:41 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "new". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('new')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/new
+HTTP_REFERER=http://aeg-technic.ru/new
+---
+2022/03/09 12:59:42 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "New". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('New')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/New
+HTTP_REFERER=http://aeg-technic.ru/New
+---
+2022/03/09 12:59:42 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "NEW". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('NEW')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/NEW
+HTTP_REFERER=http://aeg-technic.ru/NEW
+---
+2022/03/09 12:59:42 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "wp-old". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('wp-old')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/wp-old
+HTTP_REFERER=http://aeg-technic.ru/wp-old
+---
+2022/03/09 12:59:43 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "2020". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('2020')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/2020
+HTTP_REFERER=http://aeg-technic.ru/2020
+---
+2022/03/09 12:59:43 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "2019". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('2019')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/2019
+HTTP_REFERER=http://aeg-technic.ru/2019
+---
+2022/03/09 12:59:44 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "2018". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('2018')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/2018
+HTTP_REFERER=http://aeg-technic.ru/2018
+---
+2022/03/09 12:59:44 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "backup". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('backup')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/backup
+HTTP_REFERER=http://aeg-technic.ru/backup
+---
+2022/03/09 12:59:45 [error] [exception.Error] Error: Call to a member function getCustomerData() on null in /home/c/cc25985/public_html/protected/controllers/TestController.php:14
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(4207): TestController->actionIndex()
+#1 /home/c/cc25985/yii/yiilite.php(3720): CInlineAction->runWithParams(Array)
+#2 /home/c/cc25985/yii/yiilite.php(3705): CController->runAction(Object(CInlineAction))
+#3 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /home/c/cc25985/yii/yiilite.php(1799): CController->run('')
+#5 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('test')
+#6 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#7 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#8 {main}
+REQUEST_URI=/test
+HTTP_REFERER=http://aeg-technic.ru/test
+---
+2022/03/09 12:59:45 [error] [exception.Error] Error: Call to a member function getCustomerData() on null in /home/c/cc25985/public_html/protected/controllers/TestController.php:14
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(4207): TestController->actionIndex()
+#1 /home/c/cc25985/yii/yiilite.php(3720): CInlineAction->runWithParams(Array)
+#2 /home/c/cc25985/yii/yiilite.php(3705): CController->runAction(Object(CInlineAction))
+#3 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /home/c/cc25985/yii/yiilite.php(1799): CController->run('')
+#5 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('Test')
+#6 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#7 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#8 {main}
+REQUEST_URI=/Test
+HTTP_REFERER=http://aeg-technic.ru/Test
+---
+2022/03/09 12:59:46 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "TEST". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('TEST')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/TEST
+HTTP_REFERER=http://aeg-technic.ru/TEST
+---
+2022/03/09 12:59:46 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "demo". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('demo')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo
+HTTP_REFERER=http://aeg-technic.ru/demo
+---
+2022/03/09 12:59:47 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "bc". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('bc')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/bc
+HTTP_REFERER=http://aeg-technic.ru/bc
+---
+2022/03/09 12:59:47 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "www". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('www')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/www
+HTTP_REFERER=http://aeg-technic.ru/www
+---
+2022/03/09 12:59:48 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "WWW". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('WWW')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/WWW
+HTTP_REFERER=http://aeg-technic.ru/WWW
+---
+2022/03/09 12:59:48 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "Www". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('Www')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/Www
+HTTP_REFERER=http://aeg-technic.ru/Www
+---
+2022/03/09 12:59:49 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "2021". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('2021')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/2021
+HTTP_REFERER=http://aeg-technic.ru/2021
+---
+2022/03/09 12:59:50 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "main". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('main')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/main
+HTTP_REFERER=http://aeg-technic.ru/main
+---
+2022/03/09 12:59:50 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "old-site". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('old-site')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/old-site
+HTTP_REFERER=http://aeg-technic.ru/old-site
+---
+2022/03/09 12:59:51 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "bk". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('bk')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/bk
+HTTP_REFERER=http://aeg-technic.ru/bk
+---
+2022/03/09 12:59:51 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "Backup". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('Backup')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/Backup
+HTTP_REFERER=http://aeg-technic.ru/Backup
+---
+2022/03/09 12:59:52 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "BACKUP". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('BACKUP')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/BACKUP
+HTTP_REFERER=http://aeg-technic.ru/BACKUP
+---
+2022/03/09 12:59:52 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "SHOP". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('SHOP')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/SHOP
+HTTP_REFERER=http://aeg-technic.ru/SHOP
+---
+2022/03/09 12:59:54 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "bak". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('bak')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/bak
+HTTP_REFERER=http://aeg-technic.ru/bak
+---
+2022/03/09 12:59:54 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "sitio". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('sitio')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitio
+HTTP_REFERER=http://aeg-technic.ru/sitio
+---
+2022/03/09 12:59:55 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "bac". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('bac')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/bac
+HTTP_REFERER=http://aeg-technic.ru/bac
+---
+2022/03/09 12:59:55 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "sito". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('sito')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/sito
+HTTP_REFERER=http://aeg-technic.ru/sito
+---
+2022/03/09 12:59:57 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "SITE". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('SITE')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/SITE
+HTTP_REFERER=http://aeg-technic.ru/SITE
+---
+2022/03/09 12:59:57 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "blog". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('blog')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog
+HTTP_REFERER=http://aeg-technic.ru/blog
+---
+2022/03/09 12:59:58 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "BLOG". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('BLOG')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/BLOG
+HTTP_REFERER=http://aeg-technic.ru/BLOG
+---
+2022/03/09 12:59:58 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "Blog". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('Blog')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog
+HTTP_REFERER=http://aeg-technic.ru/Blog
+---
+2022/03/09 13:44:13 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "stiralnye-mashiny". in /home/c/cc25985/yii/yiilite.php:3818
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(3700): CController->missingAction('stiralnye-mashi...')
+#1 /home/c/cc25985/yii/yiilite.php(1799): CController->run('stiralnye-mashi...')
+#2 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('catalog/stiraln...')
+#3 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#4 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/stiralnye-mashiny/utm_source=yandex&utm_medium=cpc&utm_campaign=71906648&utm_content=11832097135&utm_term=
+---
+2022/03/09 13:44:19 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "stiralnye-mashiny". in /home/c/cc25985/yii/yiilite.php:3818
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(3700): CController->missingAction('stiralnye-mashi...')
+#1 /home/c/cc25985/yii/yiilite.php(1799): CController->run('stiralnye-mashi...')
+#2 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('catalog/stiraln...')
+#3 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#4 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/stiralnye-mashiny/utm_source=yandex&utm_medium=cpc&utm_campaign=71906648&utm_content=11832097134&utm_term=
+---
+2022/03/09 13:44:30 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "stiralnye-mashiny". in /home/c/cc25985/yii/yiilite.php:3818
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(3700): CController->missingAction('stiralnye-mashi...')
+#1 /home/c/cc25985/yii/yiilite.php(1799): CController->run('stiralnye-mashi...')
+#2 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('catalog/stiraln...')
+#3 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#4 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/stiralnye-mashiny/utm_source=yandex&utm_medium=cpc&utm_campaign=71906648&utm_content=11832145922&utm_term=
+---
+2022/03/09 13:44:33 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "stiralnye-mashiny". in /home/c/cc25985/yii/yiilite.php:3818
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(3700): CController->missingAction('stiralnye-mashi...')
+#1 /home/c/cc25985/yii/yiilite.php(1799): CController->run('stiralnye-mashi...')
+#2 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('catalog/stiraln...')
+#3 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#4 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/stiralnye-mashiny/utm_source=yandex&utm_medium=cpc&utm_campaign=71906648&utm_content=11832145921&utm_term=
+---
+2022/03/10 06:15:57 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "ads.txt". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('ads.txt')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/ads.txt
+HTTP_REFERER=http://aeg-technic.ru/ads.txt
+---
+2022/03/10 14:12:18 [error] [exception.Mpdf\Exception\FontException] Mpdf\Exception\FontException: Error loading font: Could not find PostScript font name '/home/c/cc25985/public_html/protected/pdf_fonts/Arial.ttf' in /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/TTFontFile.php:731
+Stack trace:
+#0 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/TTFontFile.php(293): Mpdf\TTFontFile->extractInfo(false, false, 0)
+#1 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Fonts/MetricsGenerator.php(23): Mpdf\TTFontFile->getMetrics('/home/c/cc25985...', 'arial', 0, false, false, 0)
+#2 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(3898): Mpdf\Fonts\MetricsGenerator->generateMetrics('/home/c/cc25985...', Array, 'arial', 0, false, false, 0, false)
+#3 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(4154): Mpdf\Mpdf->AddFont('arial', '')
+#4 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(10875): Mpdf\Mpdf->SetFont('arial')
+#5 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(1483): Mpdf\Mpdf->SetDefaultFont('arial')
+#6 /home/c/cc25985/public_html/protected/components/PdfGenerator.php(63): Mpdf\Mpdf->__construct(Array)
+#7 /home/c/cc25985/public_html/protected/modules/DOrder/widgets/actions/OrderWidget.php(105): PdfGenerator->renderPdf()
+#8 /home/c/cc25985/public_html/protected/modules/DOrder/widgets/actions/OrderWidget.php(63): DOrder\widgets\actions\OrderWidget->sendBillPdf(Object(DOrder\models\DOrder))
+#9 /home/c/cc25985/yii/yiilite.php(3594): DOrder\widgets\actions\OrderWidget->run()
+#10 /home/c/cc25985/public_html/protected/views/dOrder/order.php(5): CBaseController->widget('\\DOrder\\widgets...', Array)
+#11 /home/c/cc25985/yii/yiilite.php(3561): require('/home/c/cc25985...')
+#12 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', NULL, true)
+#13 /home/c/cc25985/yii/yiilite.php(3972): CBaseController->renderFile('/home/c/cc25985...', NULL, true)
+#14 /home/c/cc25985/yii/yiilite.php(3940): CController->renderPartial('order', NULL, true)
+#15 /home/c/cc25985/public_html/protected/controllers/DOrderController.php(50): CController->render('order')
+#16 /home/c/cc25985/public_html/protected/controllers/DOrderController.php(35): DOrderController->actionOrder()
+#17 /home/c/cc25985/yii/yiilite.php(4207): DOrderController->actionIndex()
+#18 /home/c/cc25985/yii/yiilite.php(3720): CInlineAction->runWithParams(Array)
+#19 /home/c/cc25985/yii/yiilite.php(7049): CController->runAction(Object(CInlineAction))
+#20 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#21 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#22 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#23 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/c/cc25985/yii/yiilite.php(1799): CController->run('index')
+#25 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dOrder/index')
+#26 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#27 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#28 {main}
+REQUEST_URI=/order
+HTTP_REFERER=https://aeg-technic.ru/order
+---
+2022/03/10 14:16:31 [error] [exception.Mpdf\Exception\FontException] Mpdf\Exception\FontException: Error loading font: Could not find PostScript font name '/home/c/cc25985/public_html/protected/pdf_fonts/Arial.ttf' in /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/TTFontFile.php:731
+Stack trace:
+#0 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/TTFontFile.php(293): Mpdf\TTFontFile->extractInfo(false, false, 0)
+#1 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Fonts/MetricsGenerator.php(23): Mpdf\TTFontFile->getMetrics('/home/c/cc25985...', 'arial', 0, false, false, 0)
+#2 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(3898): Mpdf\Fonts\MetricsGenerator->generateMetrics('/home/c/cc25985...', Array, 'arial', 0, false, false, 0, false)
+#3 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(4154): Mpdf\Mpdf->AddFont('arial', '')
+#4 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(10875): Mpdf\Mpdf->SetFont('arial')
+#5 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(1483): Mpdf\Mpdf->SetDefaultFont('arial')
+#6 /home/c/cc25985/public_html/protected/components/PdfGenerator.php(63): Mpdf\Mpdf->__construct(Array)
+#7 /home/c/cc25985/public_html/protected/modules/DOrder/widgets/actions/OrderWidget.php(105): PdfGenerator->renderPdf()
+#8 /home/c/cc25985/public_html/protected/modules/DOrder/widgets/actions/OrderWidget.php(63): DOrder\widgets\actions\OrderWidget->sendBillPdf(Object(DOrder\models\DOrder))
+#9 /home/c/cc25985/yii/yiilite.php(3594): DOrder\widgets\actions\OrderWidget->run()
+#10 /home/c/cc25985/public_html/protected/views/dOrder/order.php(5): CBaseController->widget('\\DOrder\\widgets...', Array)
+#11 /home/c/cc25985/yii/yiilite.php(3561): require('/home/c/cc25985...')
+#12 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', NULL, true)
+#13 /home/c/cc25985/yii/yiilite.php(3972): CBaseController->renderFile('/home/c/cc25985...', NULL, true)
+#14 /home/c/cc25985/yii/yiilite.php(3940): CController->renderPartial('order', NULL, true)
+#15 /home/c/cc25985/public_html/protected/controllers/DOrderController.php(50): CController->render('order')
+#16 /home/c/cc25985/public_html/protected/controllers/DOrderController.php(35): DOrderController->actionOrder()
+#17 /home/c/cc25985/yii/yiilite.php(4207): DOrderController->actionIndex()
+#18 /home/c/cc25985/yii/yiilite.php(3720): CInlineAction->runWithParams(Array)
+#19 /home/c/cc25985/yii/yiilite.php(7049): CController->runAction(Object(CInlineAction))
+#20 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#21 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#22 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#23 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/c/cc25985/yii/yiilite.php(1799): CController->run('index')
+#25 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dOrder/index')
+#26 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#27 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#28 {main}
+REQUEST_URI=/order
+HTTP_REFERER=https://aeg-technic.ru/order
+---
+2022/03/10 14:19:22 [error] [exception.Mpdf\Exception\FontException] Mpdf\Exception\FontException: Error loading font: Could not find PostScript font name '/home/c/cc25985/public_html/protected/pdf_fonts/Arial.ttf' in /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/TTFontFile.php:731
+Stack trace:
+#0 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/TTFontFile.php(293): Mpdf\TTFontFile->extractInfo(false, false, 0)
+#1 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Fonts/MetricsGenerator.php(23): Mpdf\TTFontFile->getMetrics('/home/c/cc25985...', 'arial', 0, false, false, 0)
+#2 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(3898): Mpdf\Fonts\MetricsGenerator->generateMetrics('/home/c/cc25985...', Array, 'arial', 0, false, false, 0, false)
+#3 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(4154): Mpdf\Mpdf->AddFont('arial', '')
+#4 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(10875): Mpdf\Mpdf->SetFont('arial')
+#5 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(1483): Mpdf\Mpdf->SetDefaultFont('arial')
+#6 /home/c/cc25985/public_html/protected/components/PdfGenerator.php(63): Mpdf\Mpdf->__construct(Array)
+#7 /home/c/cc25985/public_html/protected/modules/DOrder/widgets/actions/OrderWidget.php(105): PdfGenerator->renderPdf()
+#8 /home/c/cc25985/public_html/protected/modules/DOrder/widgets/actions/OrderWidget.php(63): DOrder\widgets\actions\OrderWidget->sendBillPdf(Object(DOrder\models\DOrder))
+#9 /home/c/cc25985/yii/yiilite.php(3594): DOrder\widgets\actions\OrderWidget->run()
+#10 /home/c/cc25985/public_html/protected/views/dOrder/order.php(5): CBaseController->widget('\\DOrder\\widgets...', Array)
+#11 /home/c/cc25985/yii/yiilite.php(3561): require('/home/c/cc25985...')
+#12 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', NULL, true)
+#13 /home/c/cc25985/yii/yiilite.php(3972): CBaseController->renderFile('/home/c/cc25985...', NULL, true)
+#14 /home/c/cc25985/yii/yiilite.php(3940): CController->renderPartial('order', NULL, true)
+#15 /home/c/cc25985/public_html/protected/controllers/DOrderController.php(50): CController->render('order')
+#16 /home/c/cc25985/public_html/protected/controllers/DOrderController.php(35): DOrderController->actionOrder()
+#17 /home/c/cc25985/yii/yiilite.php(4207): DOrderController->actionIndex()
+#18 /home/c/cc25985/yii/yiilite.php(3720): CInlineAction->runWithParams(Array)
+#19 /home/c/cc25985/yii/yiilite.php(7049): CController->runAction(Object(CInlineAction))
+#20 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#21 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#22 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#23 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/c/cc25985/yii/yiilite.php(1799): CController->run('index')
+#25 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dOrder/index')
+#26 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#27 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#28 {main}
+REQUEST_URI=/order
+HTTP_REFERER=https://aeg-technic.ru/order
+---
+2022/03/10 14:29:42 [error] [exception.Mpdf\Exception\FontException] Mpdf\Exception\FontException: Error loading font: Could not find PostScript font name '/home/c/cc25985/public_html/protected/pdf_fonts/Arial.ttf' in /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/TTFontFile.php:731
+Stack trace:
+#0 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/TTFontFile.php(293): Mpdf\TTFontFile->extractInfo(false, false, 0)
+#1 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Fonts/MetricsGenerator.php(23): Mpdf\TTFontFile->getMetrics('/home/c/cc25985...', 'arial', 0, false, false, 0)
+#2 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(3898): Mpdf\Fonts\MetricsGenerator->generateMetrics('/home/c/cc25985...', Array, 'arial', 0, false, false, 0, false)
+#3 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(4154): Mpdf\Mpdf->AddFont('arial', '')
+#4 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(10875): Mpdf\Mpdf->SetFont('arial')
+#5 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(1483): Mpdf\Mpdf->SetDefaultFont('arial')
+#6 /home/c/cc25985/public_html/protected/components/PdfGenerator.php(63): Mpdf\Mpdf->__construct(Array)
+#7 /home/c/cc25985/public_html/protected/modules/DOrder/widgets/actions/OrderWidget.php(105): PdfGenerator->renderPdf()
+#8 /home/c/cc25985/public_html/protected/modules/DOrder/widgets/actions/OrderWidget.php(63): DOrder\widgets\actions\OrderWidget->sendBillPdf(Object(DOrder\models\DOrder))
+#9 /home/c/cc25985/yii/yiilite.php(3594): DOrder\widgets\actions\OrderWidget->run()
+#10 /home/c/cc25985/public_html/protected/views/dOrder/order.php(5): CBaseController->widget('\\DOrder\\widgets...', Array)
+#11 /home/c/cc25985/yii/yiilite.php(3561): require('/home/c/cc25985...')
+#12 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', NULL, true)
+#13 /home/c/cc25985/yii/yiilite.php(3972): CBaseController->renderFile('/home/c/cc25985...', NULL, true)
+#14 /home/c/cc25985/yii/yiilite.php(3940): CController->renderPartial('order', NULL, true)
+#15 /home/c/cc25985/public_html/protected/controllers/DOrderController.php(50): CController->render('order')
+#16 /home/c/cc25985/public_html/protected/controllers/DOrderController.php(35): DOrderController->actionOrder()
+#17 /home/c/cc25985/yii/yiilite.php(4207): DOrderController->actionIndex()
+#18 /home/c/cc25985/yii/yiilite.php(3720): CInlineAction->runWithParams(Array)
+#19 /home/c/cc25985/yii/yiilite.php(7049): CController->runAction(Object(CInlineAction))
+#20 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#21 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#22 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#23 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/c/cc25985/yii/yiilite.php(1799): CController->run('index')
+#25 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dOrder/index')
+#26 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#27 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#28 {main}
+REQUEST_URI=/order
+HTTP_REFERER=https://aeg-technic.ru/order
+---
+2022/03/10 14:30:50 [error] [exception.Mpdf\Exception\FontException] Mpdf\Exception\FontException: Error loading font: Could not find PostScript font name '/home/c/cc25985/public_html/protected/pdf_fonts/Arial.ttf' in /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/TTFontFile.php:731
+Stack trace:
+#0 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/TTFontFile.php(293): Mpdf\TTFontFile->extractInfo(false, false, 0)
+#1 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Fonts/MetricsGenerator.php(23): Mpdf\TTFontFile->getMetrics('/home/c/cc25985...', 'arial', 0, false, false, 0)
+#2 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(3898): Mpdf\Fonts\MetricsGenerator->generateMetrics('/home/c/cc25985...', Array, 'arial', 0, false, false, 0, false)
+#3 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(4154): Mpdf\Mpdf->AddFont('arial', '')
+#4 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(10875): Mpdf\Mpdf->SetFont('arial')
+#5 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(1483): Mpdf\Mpdf->SetDefaultFont('arial')
+#6 /home/c/cc25985/public_html/protected/components/PdfGenerator.php(63): Mpdf\Mpdf->__construct(Array)
+#7 /home/c/cc25985/public_html/protected/modules/DOrder/widgets/actions/OrderWidget.php(105): PdfGenerator->renderPdf()
+#8 /home/c/cc25985/public_html/protected/modules/DOrder/widgets/actions/OrderWidget.php(63): DOrder\widgets\actions\OrderWidget->sendBillPdf(Object(DOrder\models\DOrder))
+#9 /home/c/cc25985/yii/yiilite.php(3594): DOrder\widgets\actions\OrderWidget->run()
+#10 /home/c/cc25985/public_html/protected/views/dOrder/order.php(5): CBaseController->widget('\\DOrder\\widgets...', Array)
+#11 /home/c/cc25985/yii/yiilite.php(3561): require('/home/c/cc25985...')
+#12 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', NULL, true)
+#13 /home/c/cc25985/yii/yiilite.php(3972): CBaseController->renderFile('/home/c/cc25985...', NULL, true)
+#14 /home/c/cc25985/yii/yiilite.php(3940): CController->renderPartial('order', NULL, true)
+#15 /home/c/cc25985/public_html/protected/controllers/DOrderController.php(50): CController->render('order')
+#16 /home/c/cc25985/public_html/protected/controllers/DOrderController.php(35): DOrderController->actionOrder()
+#17 /home/c/cc25985/yii/yiilite.php(4207): DOrderController->actionIndex()
+#18 /home/c/cc25985/yii/yiilite.php(3720): CInlineAction->runWithParams(Array)
+#19 /home/c/cc25985/yii/yiilite.php(7049): CController->runAction(Object(CInlineAction))
+#20 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#21 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#22 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#23 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/c/cc25985/yii/yiilite.php(1799): CController->run('index')
+#25 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dOrder/index')
+#26 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#27 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#28 {main}
+REQUEST_URI=/order
+HTTP_REFERER=https://aeg-technic.ru/order
+---
+2022/03/10 14:31:37 [error] [exception.Mpdf\Exception\FontException] Mpdf\Exception\FontException: Error loading font: Could not find PostScript font name '/home/c/cc25985/public_html/protected/pdf_fonts/Arial.ttf' in /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/TTFontFile.php:731
+Stack trace:
+#0 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/TTFontFile.php(293): Mpdf\TTFontFile->extractInfo(false, false, 0)
+#1 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Fonts/MetricsGenerator.php(23): Mpdf\TTFontFile->getMetrics('/home/c/cc25985...', 'arial', 0, false, false, 0)
+#2 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(3898): Mpdf\Fonts\MetricsGenerator->generateMetrics('/home/c/cc25985...', Array, 'arial', 0, false, false, 0, false)
+#3 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(4154): Mpdf\Mpdf->AddFont('arial', '')
+#4 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(10875): Mpdf\Mpdf->SetFont('arial')
+#5 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(1483): Mpdf\Mpdf->SetDefaultFont('arial')
+#6 /home/c/cc25985/public_html/protected/components/PdfGenerator.php(63): Mpdf\Mpdf->__construct(Array)
+#7 /home/c/cc25985/public_html/protected/modules/DOrder/widgets/actions/OrderWidget.php(105): PdfGenerator->renderPdf()
+#8 /home/c/cc25985/public_html/protected/modules/DOrder/widgets/actions/OrderWidget.php(63): DOrder\widgets\actions\OrderWidget->sendBillPdf(Object(DOrder\models\DOrder))
+#9 /home/c/cc25985/yii/yiilite.php(3594): DOrder\widgets\actions\OrderWidget->run()
+#10 /home/c/cc25985/public_html/protected/views/dOrder/order.php(5): CBaseController->widget('\\DOrder\\widgets...', Array)
+#11 /home/c/cc25985/yii/yiilite.php(3561): require('/home/c/cc25985...')
+#12 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', NULL, true)
+#13 /home/c/cc25985/yii/yiilite.php(3972): CBaseController->renderFile('/home/c/cc25985...', NULL, true)
+#14 /home/c/cc25985/yii/yiilite.php(3940): CController->renderPartial('order', NULL, true)
+#15 /home/c/cc25985/public_html/protected/controllers/DOrderController.php(50): CController->render('order')
+#16 /home/c/cc25985/public_html/protected/controllers/DOrderController.php(35): DOrderController->actionOrder()
+#17 /home/c/cc25985/yii/yiilite.php(4207): DOrderController->actionIndex()
+#18 /home/c/cc25985/yii/yiilite.php(3720): CInlineAction->runWithParams(Array)
+#19 /home/c/cc25985/yii/yiilite.php(7049): CController->runAction(Object(CInlineAction))
+#20 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#21 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#22 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#23 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/c/cc25985/yii/yiilite.php(1799): CController->run('index')
+#25 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dOrder/index')
+#26 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#27 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#28 {main}
+REQUEST_URI=/order
+HTTP_REFERER=https://aeg-technic.ru/order
+---
+2022/03/10 14:43:08 [error] [exception.Mpdf\Exception\FontException] Mpdf\Exception\FontException: Error loading font: Unknown name table format 13573 for font /home/c/cc25985/public_html/protected/pdf_fonts/Arial Bold.ttf in /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/TTFontFile.php:667
+Stack trace:
+#0 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/TTFontFile.php(293): Mpdf\TTFontFile->extractInfo(false, false, 0)
+#1 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Fonts/MetricsGenerator.php(23): Mpdf\TTFontFile->getMetrics('/home/c/cc25985...', 'arialB', 0, false, false, 0)
+#2 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(3898): Mpdf\Fonts\MetricsGenerator->generateMetrics('/home/c/cc25985...', Array, 'arialB', 0, false, false, 0, false)
+#3 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(4154): Mpdf\Mpdf->AddFont('arial', 'B')
+#4 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(18924): Mpdf\Mpdf->SetFont('arial', 'B', 25, false)
+#5 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(18530): Mpdf\Mpdf->SetStyle('B', true)
+#6 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Tag/BlockTag.php(388): Mpdf\Mpdf->setCSS(Array, 'BLOCK', 'DIV')
+#7 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Tag.php(243): Mpdf\Tag\BlockTag->open(Array, Array, 169)
+#8 /home/c/cc25985/public_html/protected/vendor/mpdf/mpdf/src/Mpdf.php(13751): Mpdf\Tag->OpenTag('DIV', Array, Array, 169)
+#9 /home/c/cc25985/public_html/protected/components/PdfGenerator.php(64): Mpdf\Mpdf->WriteHTML(' <div class="ma...')
+#10 /home/c/cc25985/public_html/protected/modules/DOrder/widgets/actions/OrderWidget.php(105): PdfGenerator->renderPdf()
+#11 /home/c/cc25985/public_html/protected/modules/DOrder/widgets/actions/OrderWidget.php(63): DOrder\widgets\actions\OrderWidget->sendBillPdf(Object(DOrder\models\DOrder))
+#12 /home/c/cc25985/yii/yiilite.php(3594): DOrder\widgets\actions\OrderWidget->run()
+#13 /home/c/cc25985/public_html/protected/views/dOrder/order.php(5): CBaseController->widget('\\DOrder\\widgets...', Array)
+#14 /home/c/cc25985/yii/yiilite.php(3561): require('/home/c/cc25985...')
+#15 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', NULL, true)
+#16 /home/c/cc25985/yii/yiilite.php(3972): CBaseController->renderFile('/home/c/cc25985...', NULL, true)
+#17 /home/c/cc25985/yii/yiilite.php(3940): CController->renderPartial('order', NULL, true)
+#18 /home/c/cc25985/public_html/protected/controllers/DOrderController.php(50): CController->render('order')
+#19 /home/c/cc25985/public_html/protected/controllers/DOrderController.php(35): DOrderController->actionOrder()
+#20 /home/c/cc25985/yii/yiilite.php(4207): DOrderController->actionIndex()
+#21 /home/c/cc25985/yii/yiilite.php(3720): CInlineAction->runWithParams(Array)
+#22 /home/c/cc25985/yii/yiilite.php(7049): CController->runAction(Object(CInlineAction))
+#23 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#24 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#25 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#26 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 /home/c/cc25985/yii/yiilite.php(1799): CController->run('index')
+#28 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dOrder/index')
+#29 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#30 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#31 {main}
+REQUEST_URI=/order
+HTTP_REFERER=https://aeg-technic.ru/order
+---
+2022/03/11 02:56:01 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "/robots.txt". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('/robots.txt')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=//robots.txt
+---
+2022/03/11 02:56:02 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "/.well-known/security.txt". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('/.well-known/se...')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=//.well-known/security.txt
+---
+2022/03/11 07:23:26 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "dcart/add". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dcart/add')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcart/add?id=389
+---
+2022/03/11 07:23:32 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "dcart/add". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dcart/add')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcart/add?id=403
+---
+2022/03/11 07:23:38 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "dcart/add". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dcart/add')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcart/add?id=410
+---
+2022/03/11 07:23:44 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "dcart/add". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dcart/add')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcart/add?id=431
+---
+2022/03/11 07:23:49 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "dcart/add". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dcart/add')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcart/add?id=464
+---
+2022/03/11 07:23:55 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "dcart/add". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dcart/add')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcart/add?id=470
+---
+2022/03/11 07:23:59 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "dcart/add". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dcart/add')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcart/add?id=481
+---
+2022/03/11 07:24:05 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "dcart/add". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dcart/add')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcart/add?id=483
+---
+2022/03/11 07:24:12 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "dcart/add". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dcart/add')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcart/add?id=502
+---
+2022/03/11 07:24:17 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "dcart/add". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dcart/add')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcart/add?id=507
+---
+2022/03/11 07:40:56 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "dcart/add". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dcart/add')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcart/add?id=523
+---
+2022/03/11 07:41:02 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "dcart/add". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dcart/add')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcart/add?id=522
+---
+2022/03/12 21:08:23 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `tbl_migration`.
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (374)
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (208)
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (160)
+2022/03/12 21:08:23 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `tbl_migration`.
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (174)
+in /home/c/cc25985/public_html/protected/modules/common/components/base/WebModule.php (179)
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HYii.php (685)
+2022/03/12 21:08:23 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. Выполнявшийся SQL-запрос: CREATE TABLE `tbl_migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+).
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (174)
+in /home/c/cc25985/public_html/protected/modules/common/components/base/WebModule.php (179)
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HYii.php (685)
+2022/03/12 21:08:23 [error] [exception.CDbException] CDbException: CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. The SQL statement executed was: CREATE TABLE `tbl_migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+) in /home/c/cc25985/yii/yiilite.php:9587
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(10023): CDbCommand->execute()
+#1 /home/c/cc25985/yii/cli/commands/MigrateCommand.php(499): CDbCommand->createTable('tbl_migration', Array)
+#2 /home/c/cc25985/yii/cli/commands/MigrateCommand.php(484): MigrateCommand->createMigrationHistoryTable()
+#3 /home/c/cc25985/yii/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory(-1)
+#4 /home/c/cc25985/yii/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /home/c/cc25985/yii/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /home/c/cc25985/yii/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php(174): CConsoleCommandRunner->run(Array)
+#9 /home/c/cc25985/public_html/protected/modules/common/components/base/WebModule.php(179): common\components\helpers\HDb::migrate('application.mod...')
+#10 /home/c/cc25985/yii/yiilite.php(947): common\components\base\WebModule->preinit()
+#11 /home/c/cc25985/yii/yiilite.php(97): CModule->__construct('extend/slider', Object(ExtendModule), Array)
+#12 /home/c/cc25985/yii/yiilite.php(1053): YiiBase::createComponent(Array, 'extend/slider', Object(ExtendModule), Array)
+#13 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HYii.php(685): CModule->getModule('slider')
+#14 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HYii.php(576): common\components\helpers\HYii::module('slider')
+#15 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HYii.php(590): common\components\helpers\HYii::createT('\\extend\\modules...', 'extend.slider')
+#16 /home/c/cc25985/public_html/protected/modules/extend/modules/slider/config/crud/slider_static.php(12): common\components\helpers\HYii::ct('\\extend\\modules...', 'extend.slider')
+#17 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HFile.php(524): include('/home/c/cc25985...')
+#18 /home/c/cc25985/public_html/protected/modules/common/modules/crud/components/helpers/HCrud.php(467): common\components\helpers\HFile::includeByAlias('extend.modules....')
+#19 /home/c/cc25985/public_html/protected/modules/common/modules/crud/components/helpers/HCrud.php(175): crud\components\helpers\HCrud::prepareConfig(Array)
+#20 /home/c/cc25985/public_html/protected/modules/common/modules/crud/components/factory/ActiveRecord.php(13): crud\components\helpers\HCrud::config()
+#21 /home/c/cc25985/public_html/protected/modules/common/modules/crud/components/ClassLoader.php(17): crud\components\factory\ActiveRecord::load('crud\\models\\ar\\...')
+#22 [internal function]: crud\components\ClassLoader::autoload('crud\\models\\ar\\...')
+#23 /home/c/cc25985/public_html/protected/config/events.php(2): spl_autoload_call('crud\\models\\ar\\...')
+#24 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HFile.php(506): include('/home/c/cc25985...')
+#25 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HEvent.php(65): common\components\helpers\HFile::includeFile('/home/c/cc25985...', Array)
+#26 /home/c/cc25985/public_html/protected/modules/common/components/Init.php(43): common\components\helpers\HEvent::registerByAlias('application.con...', true)
+#27 /home/c/cc25985/public_html/protected/modules/common/components/Init.php(35): common\components\Init->registerMainEvents()
+#28 /home/c/cc25985/yii/yiilite.php(1104): common\components\Init->init()
+#29 /home/c/cc25985/yii/yiilite.php(1171): CModule->getComponent('kontur_common_i...')
+#30 /home/c/cc25985/yii/yiilite.php(1228): CModule->preloadComponents()
+#31 /home/c/cc25985/yii/yiilite.php(56): CApplication->__construct(Array)
+#32 /home/c/cc25985/yii/yiilite.php(48): YiiBase::createApplication('CWebApplication', '/home/c/cc25985...')
+#33 /home/c/cc25985/public_html/index.php(52): YiiBase::createWebApplication('/home/c/cc25985...')
+#34 {main}
+REQUEST_URI=/catalog/posudomoechnye-mashiny?utm_source=yandex&utm_medium=cpc&utm_campaign=71907105&utm_content=11832147123&utm_term=%D0%BF%D0%BE%D1%81%D1%83%D0%B4%D0%BE%D0%BC%D0%BE%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C&yclid=1168431905003857284
+---
+2022/03/12 21:08:23 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `tbl_migration`.
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (374)
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (208)
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (160)
+2022/03/12 21:08:23 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `tbl_migration`.
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (174)
+in /home/c/cc25985/public_html/protected/modules/common/components/base/WebModule.php (179)
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HYii.php (685)
+2022/03/12 21:08:23 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. Выполнявшийся SQL-запрос: CREATE TABLE `tbl_migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+).
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (174)
+in /home/c/cc25985/public_html/protected/modules/common/components/base/WebModule.php (179)
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HYii.php (685)
+2022/03/12 21:08:23 [error] [exception.CDbException] CDbException: CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. The SQL statement executed was: CREATE TABLE `tbl_migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+) in /home/c/cc25985/yii/yiilite.php:9587
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(10023): CDbCommand->execute()
+#1 /home/c/cc25985/yii/cli/commands/MigrateCommand.php(499): CDbCommand->createTable('tbl_migration', Array)
+#2 /home/c/cc25985/yii/cli/commands/MigrateCommand.php(484): MigrateCommand->createMigrationHistoryTable()
+#3 /home/c/cc25985/yii/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory(-1)
+#4 /home/c/cc25985/yii/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /home/c/cc25985/yii/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /home/c/cc25985/yii/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php(174): CConsoleCommandRunner->run(Array)
+#9 /home/c/cc25985/public_html/protected/modules/common/components/base/WebModule.php(179): common\components\helpers\HDb::migrate('application.mod...')
+#10 /home/c/cc25985/yii/yiilite.php(947): common\components\base\WebModule->preinit()
+#11 /home/c/cc25985/yii/yiilite.php(97): CModule->__construct('extend/slider', Object(ExtendModule), Array)
+#12 /home/c/cc25985/yii/yiilite.php(1053): YiiBase::createComponent(Array, 'extend/slider', Object(ExtendModule), Array)
+#13 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HYii.php(685): CModule->getModule('slider')
+#14 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HYii.php(576): common\components\helpers\HYii::module('slider')
+#15 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HYii.php(590): common\components\helpers\HYii::createT('\\extend\\modules...', 'extend.slider')
+#16 /home/c/cc25985/public_html/protected/modules/extend/modules/slider/config/crud/slider_static.php(12): common\components\helpers\HYii::ct('\\extend\\modules...', 'extend.slider')
+#17 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HFile.php(524): include('/home/c/cc25985...')
+#18 /home/c/cc25985/public_html/protected/modules/common/modules/crud/components/helpers/HCrud.php(467): common\components\helpers\HFile::includeByAlias('extend.modules....')
+#19 /home/c/cc25985/public_html/protected/modules/common/modules/crud/components/helpers/HCrud.php(175): crud\components\helpers\HCrud::prepareConfig(Array)
+#20 /home/c/cc25985/public_html/protected/modules/common/modules/crud/components/factory/ActiveRecord.php(13): crud\components\helpers\HCrud::config()
+#21 /home/c/cc25985/public_html/protected/modules/common/modules/crud/components/ClassLoader.php(17): crud\components\factory\ActiveRecord::load('crud\\models\\ar\\...')
+#22 [internal function]: crud\components\ClassLoader::autoload('crud\\models\\ar\\...')
+#23 /home/c/cc25985/public_html/protected/config/events.php(2): spl_autoload_call('crud\\models\\ar\\...')
+#24 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HFile.php(506): include('/home/c/cc25985...')
+#25 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HEvent.php(65): common\components\helpers\HFile::includeFile('/home/c/cc25985...', Array)
+#26 /home/c/cc25985/public_html/protected/modules/common/components/Init.php(43): common\components\helpers\HEvent::registerByAlias('application.con...', true)
+#27 /home/c/cc25985/public_html/protected/modules/common/components/Init.php(35): common\components\Init->registerMainEvents()
+#28 /home/c/cc25985/yii/yiilite.php(1104): common\components\Init->init()
+#29 /home/c/cc25985/yii/yiilite.php(1171): CModule->getComponent('kontur_common_i...')
+#30 /home/c/cc25985/yii/yiilite.php(1228): CModule->preloadComponents()
+#31 /home/c/cc25985/yii/yiilite.php(56): CApplication->__construct(Array)
+#32 /home/c/cc25985/yii/yiilite.php(48): YiiBase::createApplication('CWebApplication', '/home/c/cc25985...')
+#33 /home/c/cc25985/public_html/index.php(52): YiiBase::createWebApplication('/home/c/cc25985...')
+#34 {main}
+REQUEST_URI=/catalog/xolodilniki?utm_source=yandex&utm_medium=cpc&utm_campaign=71915641&utm_content=11833200537&utm_term=%D0%A5%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B8&yclid=1168432574422384794
+---
+2022/03/13 20:16:00 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=481&mdrv=aeg-technic.ru
+---
+2022/03/13 20:16:00 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=431&mdrv=aeg-technic.ru
+---
+2022/03/13 20:16:00 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=502&mdrv=aeg-technic.ru
+---
+2022/03/13 20:16:00 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=470&mdrv=aeg-technic.ru
+---
+2022/03/13 20:16:00 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=403&mdrv=aeg-technic.ru
+---
+2022/03/13 20:16:00 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=483&mdrv=aeg-technic.ru
+---
+2022/03/13 20:16:00 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=464&mdrv=aeg-technic.ru
+---
+2022/03/13 20:16:00 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=507&mdrv=aeg-technic.ru
+---
+2022/03/13 20:16:01 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=389&mdrv=aeg-technic.ru
+---
+2022/03/14 08:47:30 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "ads.txt". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('ads.txt')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/ads.txt
+---
+2022/03/14 08:47:31 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "ads.txt". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('ads.txt')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/ads.txt
+---
+2022/03/14 08:47:33 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "ads.txt". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('ads.txt')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/ads.txt
+---
+2022/03/14 08:47:35 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "ads.txt". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('ads.txt')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/ads.txt
+---
+2022/03/14 11:20:58 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. Выполнявшийся SQL-запрос: SELECT `t`.`id`, `t`.`alias`, `t`.`category_id` FROM `product` `t` WHERE `t`.`id`=431 LIMIT 1.
+in /home/c/cc25985/public_html/protected/components/rules/DShopRule.php (106)
+in /home/c/cc25985/public_html/themes/adaptive_template_4/views/shop/_products.php (18)
+in /home/c/cc25985/public_html/protected/views/shop/_products_listview.php (5)
+2022/03/14 11:20:58 [error] [exception.CDbException] CDbException: CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. The SQL statement executed was: SELECT `t`.`id`, `t`.`alias`, `t`.`category_id` FROM `product` `t` WHERE `t`.`id`=431 LIMIT 1 in /home/c/cc25985/yii/yiilite.php:9674
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(9601): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/c/cc25985/yii/yiilite.php(8121): CDbCommand->queryRow()
+#2 /home/c/cc25985/yii/yiilite.php(8196): CActiveRecord->query(Object(CDbCriteria))
+#3 /home/c/cc25985/public_html/protected/components/rules/DShopRule.php(106): CActiveRecord->findByPk('431', Array)
+#4 /home/c/cc25985/yii/yiilite.php(3189): DShopRule->createUrl(Object(CUrlManager), 'shop/product', Array, '&')
+#5 /home/c/cc25985/yii/yiilite.php(1405): CUrlManager->createUrl('shop/product', Array, '&')
+#6 /home/c/cc25985/public_html/themes/adaptive_template_4/views/shop/_products.php(18): CApplication->createUrl('shop/product', Array)
+#7 /home/c/cc25985/yii/yiilite.php(3565): require('/home/c/cc25985...')
+#8 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', Array, false)
+#9 /home/c/cc25985/yii/zii/widgets/CListView.php(291): CBaseController->renderFile('/home/c/cc25985...', Array)
+#10 /home/c/cc25985/yii/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 /home/c/cc25985/yii/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{sorter}{items}...')
+#13 /home/c/cc25985/yii/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#14 /home/c/cc25985/yii/yiilite.php(3594): CBaseListView->run()
+#15 /home/c/cc25985/public_html/protected/views/shop/_products_listview.php(5): CBaseController->widget('widget.listView...', Array)
+#16 /home/c/cc25985/yii/yiilite.php(3561): require('/home/c/cc25985...')
+#17 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', Array, true)
+#18 /home/c/cc25985/yii/yiilite.php(3972): CBaseController->renderFile('/home/c/cc25985...', Array, true)
+#19 /home/c/cc25985/public_html/protected/views/shop/category.php(29): CController->renderPartial('_products_listv...', Array)
+#20 /home/c/cc25985/yii/yiilite.php(3561): require('/home/c/cc25985...')
+#21 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', Array, true)
+#22 /home/c/cc25985/yii/yiilite.php(3972): CBaseController->renderFile('/home/c/cc25985...', Array, true)
+#23 /home/c/cc25985/yii/yiilite.php(3940): CController->renderPartial('category', Array, true)
+#24 /home/c/cc25985/public_html/protected/controllers/ShopController.php(66): CController->render('category', Array)
+#25 [internal function]: ShopController->actionCategory('54')
+#26 /home/c/cc25985/yii/yiilite.php(4189): ReflectionMethod->invokeArgs(Object(ShopController), Array)
+#27 /home/c/cc25985/yii/yiilite.php(4206): CAction->runWithParamsInternal(Object(ShopController), Object(ReflectionMethod), Array)
+#28 /home/c/cc25985/yii/yiilite.php(3720): CInlineAction->runWithParams(Array)
+#29 /home/c/cc25985/yii/yiilite.php(7049): CController->runAction(Object(CInlineAction))
+#30 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#31 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#32 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#33 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#34 /home/c/cc25985/yii/yiilite.php(1799): CController->run('category')
+#35 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('shop/category')
+#36 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#37 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#38 {main}
+REQUEST_URI=/catalog/varochnye-paneli?utm_source=yandex&utm_medium=cpc&utm_campaign=71907113&utm_content=11832147873&utm_term=%D0%B2%D0%B0%D1%80%D0%BE%D1%87%D0%BD%D1%8B%D0%B5%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8%20aeg%20%D1%86%D0%B5%D0%BD%D0%B0&yclid=1204483942726036008
+HTTP_REFERER=https://yandex.ru/searchapp?from=zen&text=
+---
+2022/03/14 11:20:58 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. Выполнявшийся SQL-запрос: SELECT `t`.`id`, `t`.`alias`, `t`.`category_id` FROM `product` `t` WHERE `t`.`id`=403 LIMIT 1.
+in /home/c/cc25985/public_html/protected/components/rules/DShopRule.php (106)
+in /home/c/cc25985/public_html/themes/adaptive_template_4/views/shop/_products.php (18)
+in /home/c/cc25985/public_html/protected/views/shop/_products_listview.php (5)
+2022/03/14 11:20:58 [error] [exception.CDbException] CDbException: CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. The SQL statement executed was: SELECT `t`.`id`, `t`.`alias`, `t`.`category_id` FROM `product` `t` WHERE `t`.`id`=403 LIMIT 1 in /home/c/cc25985/yii/yiilite.php:9674
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(9601): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/c/cc25985/yii/yiilite.php(8121): CDbCommand->queryRow()
+#2 /home/c/cc25985/yii/yiilite.php(8196): CActiveRecord->query(Object(CDbCriteria))
+#3 /home/c/cc25985/public_html/protected/components/rules/DShopRule.php(106): CActiveRecord->findByPk('403', Array)
+#4 /home/c/cc25985/yii/yiilite.php(3189): DShopRule->createUrl(Object(CUrlManager), 'shop/product', Array, '&')
+#5 /home/c/cc25985/yii/yiilite.php(1405): CUrlManager->createUrl('shop/product', Array, '&')
+#6 /home/c/cc25985/public_html/themes/adaptive_template_4/views/shop/_products.php(18): CApplication->createUrl('shop/product', Array)
+#7 /home/c/cc25985/yii/yiilite.php(3565): require('/home/c/cc25985...')
+#8 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', Array, false)
+#9 /home/c/cc25985/yii/zii/widgets/CListView.php(291): CBaseController->renderFile('/home/c/cc25985...', Array)
+#10 /home/c/cc25985/yii/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 /home/c/cc25985/yii/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{sorter}{items}...')
+#13 /home/c/cc25985/yii/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#14 /home/c/cc25985/yii/yiilite.php(3594): CBaseListView->run()
+#15 /home/c/cc25985/public_html/protected/views/shop/_products_listview.php(5): CBaseController->widget('widget.listView...', Array)
+#16 /home/c/cc25985/yii/yiilite.php(3561): require('/home/c/cc25985...')
+#17 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', Array, true)
+#18 /home/c/cc25985/yii/yiilite.php(3972): CBaseController->renderFile('/home/c/cc25985...', Array, true)
+#19 /home/c/cc25985/public_html/protected/views/shop/category.php(29): CController->renderPartial('_products_listv...', Array)
+#20 /home/c/cc25985/yii/yiilite.php(3561): require('/home/c/cc25985...')
+#21 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', Array, true)
+#22 /home/c/cc25985/yii/yiilite.php(3972): CBaseController->renderFile('/home/c/cc25985...', Array, true)
+#23 /home/c/cc25985/yii/yiilite.php(3940): CController->renderPartial('category', Array, true)
+#24 /home/c/cc25985/public_html/protected/controllers/ShopController.php(66): CController->render('category', Array)
+#25 [internal function]: ShopController->actionCategory('52')
+#26 /home/c/cc25985/yii/yiilite.php(4189): ReflectionMethod->invokeArgs(Object(ShopController), Array)
+#27 /home/c/cc25985/yii/yiilite.php(4206): CAction->runWithParamsInternal(Object(ShopController), Object(ReflectionMethod), Array)
+#28 /home/c/cc25985/yii/yiilite.php(3720): CInlineAction->runWithParams(Array)
+#29 /home/c/cc25985/yii/yiilite.php(7049): CController->runAction(Object(CInlineAction))
+#30 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#31 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#32 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#33 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#34 /home/c/cc25985/yii/yiilite.php(1799): CController->run('category')
+#35 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('shop/category')
+#36 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#37 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#38 {main}
+REQUEST_URI=/catalog/posudomoechnye-mashiny?utm_source=yandex&utm_medium=cpc&utm_campaign=71907105&utm_content=11832147123&utm_term=%D0%BF%D0%BE%D1%81%D1%83%D0%B4%D0%BE%D0%BC%D0%BE%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C&yclid=1204487411060767510
+---
+2022/03/14 11:20:58 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. Выполнявшийся SQL-запрос: SELECT `t`.`id`, `t`.`alias`, `t`.`category_id` FROM `product` `t` WHERE `t`.`id`=464 LIMIT 1.
+in /home/c/cc25985/public_html/protected/components/rules/DShopRule.php (106)
+in /home/c/cc25985/public_html/themes/adaptive_template_4/views/shop/_products.php (18)
+in /home/c/cc25985/public_html/protected/views/shop/_products_listview.php (5)
+2022/03/14 11:20:58 [error] [exception.CDbException] CDbException: CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. The SQL statement executed was: SELECT `t`.`id`, `t`.`alias`, `t`.`category_id` FROM `product` `t` WHERE `t`.`id`=464 LIMIT 1 in /home/c/cc25985/yii/yiilite.php:9674
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(9601): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/c/cc25985/yii/yiilite.php(8121): CDbCommand->queryRow()
+#2 /home/c/cc25985/yii/yiilite.php(8196): CActiveRecord->query(Object(CDbCriteria))
+#3 /home/c/cc25985/public_html/protected/components/rules/DShopRule.php(106): CActiveRecord->findByPk('464', Array)
+#4 /home/c/cc25985/yii/yiilite.php(3189): DShopRule->createUrl(Object(CUrlManager), 'shop/product', Array, '&')
+#5 /home/c/cc25985/yii/yiilite.php(1405): CUrlManager->createUrl('shop/product', Array, '&')
+#6 /home/c/cc25985/public_html/themes/adaptive_template_4/views/shop/_products.php(18): CApplication->createUrl('shop/product', Array)
+#7 /home/c/cc25985/yii/yiilite.php(3565): require('/home/c/cc25985...')
+#8 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', Array, false)
+#9 /home/c/cc25985/yii/zii/widgets/CListView.php(291): CBaseController->renderFile('/home/c/cc25985...', Array)
+#10 /home/c/cc25985/yii/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 /home/c/cc25985/yii/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{sorter}{items}...')
+#13 /home/c/cc25985/yii/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#14 /home/c/cc25985/yii/yiilite.php(3594): CBaseListView->run()
+#15 /home/c/cc25985/public_html/protected/views/shop/_products_listview.php(5): CBaseController->widget('widget.listView...', Array)
+#16 /home/c/cc25985/yii/yiilite.php(3561): require('/home/c/cc25985...')
+#17 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', Array, true)
+#18 /home/c/cc25985/yii/yiilite.php(3972): CBaseController->renderFile('/home/c/cc25985...', Array, true)
+#19 /home/c/cc25985/public_html/protected/views/shop/category.php(29): CController->renderPartial('_products_listv...', Array)
+#20 /home/c/cc25985/yii/yiilite.php(3561): require('/home/c/cc25985...')
+#21 /home/c/cc25985/yii/yiilite.php(3540): CBaseController->renderInternal('/home/c/cc25985...', Array, true)
+#22 /home/c/cc25985/yii/yiilite.php(3972): CBaseController->renderFile('/home/c/cc25985...', Array, true)
+#23 /home/c/cc25985/yii/yiilite.php(3940): CController->renderPartial('category', Array, true)
+#24 /home/c/cc25985/public_html/protected/controllers/ShopController.php(66): CController->render('category', Array)
+#25 [internal function]: ShopController->actionCategory('57')
+#26 /home/c/cc25985/yii/yiilite.php(4189): ReflectionMethod->invokeArgs(Object(ShopController), Array)
+#27 /home/c/cc25985/yii/yiilite.php(4206): CAction->runWithParamsInternal(Object(ShopController), Object(ReflectionMethod), Array)
+#28 /home/c/cc25985/yii/yiilite.php(3720): CInlineAction->runWithParams(Array)
+#29 /home/c/cc25985/yii/yiilite.php(7049): CController->runAction(Object(CInlineAction))
+#30 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#31 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#32 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#33 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#34 /home/c/cc25985/yii/yiilite.php(1799): CController->run('category')
+#35 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('shop/category')
+#36 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#37 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#38 {main}
+REQUEST_URI=/catalog/sushilnye-mashiny?utm_source=yandex&utm_medium=cpc&utm_campaign=71907134&utm_content=11832149043&utm_term=%D1%81%D1%83%D1%88%D0%B8%D0%BB%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B1%D0%B5%D0%BB%D1%8C%D1%8F%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B1%D0%B0%D1%80%D0%B0%D0%B1%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%B8%D0%BF%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C&yclid=1204464682026202128
+---
+2022/03/14 11:21:41 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Resource temporarily unavailable in /home/c/cc25985/yii/yiilite.php:8742
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(8714): CDbConnection->open()
+#1 /home/c/cc25985/yii/yiilite.php(8703): CDbConnection->setActive(true)
+#2 /home/c/cc25985/yii/yiilite.php(1104): CDbConnection->init()
+#3 /home/c/cc25985/yii/yiilite.php(1361): CModule->getComponent('db')
+#4 /home/c/cc25985/yii/yiilite.php(7759): CApplication->getDb()
+#5 /home/c/cc25985/yii/yiilite.php(7776): CActiveRecord->getDbConnection()
+#6 /home/c/cc25985/yii/yiilite.php(8282): CActiveRecord->getCommandBuilder()
+#7 /home/c/cc25985/public_html/protected/components/DApi.php(239): CActiveRecord->exists('hidden>0 AND or...')
+#8 /home/c/cc25985/public_html/protected/components/DApi.php(77): DApi->_registerTreemenu()
+#9 /home/c/cc25985/yii/yiilite.php(1104): DApi->init()
+#10 /home/c/cc25985/yii/yiilite.php(1171): CModule->getComponent('d')
+#11 /home/c/cc25985/yii/yiilite.php(1228): CModule->preloadComponents()
+#12 /home/c/cc25985/yii/yiilite.php(56): CApplication->__construct(Array)
+#13 /home/c/cc25985/yii/yiilite.php(48): YiiBase::createApplication('CWebApplication', '/home/c/cc25985...')
+#14 /home/c/cc25985/public_html/index.php(52): YiiBase::createWebApplication('/home/c/cc25985...')
+#15 {main}
+REQUEST_URI=/catalog/xolodilniki?utm_source=yandex&utm_medium=cpc&utm_campaign=71915641&utm_content=11833200537&utm_term=%D0%A5%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B8&yclid=1204507527718174615
+---
+2022/03/14 14:47:12 [warning] [application] Не удалось присвоить небезопасный атрибут "id" класса "feedback\models\FeedbackModel".
+in /home/c/cc25985/public_html/protected/modules/feedback/models/FeedbackModel.php (214)
+in /home/c/cc25985/public_html/protected/modules/feedback/controllers/AjaxController.php (68)
+in /home/c/cc25985/public_html/index.php (52)
+2022/03/14 14:47:35 [warning] [application] Не удалось присвоить небезопасный атрибут "id" класса "feedback\models\FeedbackModel".
+in /home/c/cc25985/public_html/protected/modules/feedback/models/FeedbackModel.php (214)
+in /home/c/cc25985/public_html/protected/modules/feedback/controllers/AjaxController.php (68)
+in /home/c/cc25985/public_html/index.php (52)
+2022/03/14 21:12:40 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Resource temporarily unavailable in /home/c/cc25985/yii/yiilite.php:8742
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(8714): CDbConnection->open()
+#1 /home/c/cc25985/yii/yiilite.php(8703): CDbConnection->setActive(true)
+#2 /home/c/cc25985/yii/yiilite.php(1104): CDbConnection->init()
+#3 /home/c/cc25985/yii/yiilite.php(1361): CModule->getComponent('db')
+#4 /home/c/cc25985/yii/yiilite.php(7759): CApplication->getDb()
+#5 /home/c/cc25985/yii/yiilite.php(7776): CActiveRecord->getDbConnection()
+#6 /home/c/cc25985/yii/yiilite.php(8282): CActiveRecord->getCommandBuilder()
+#7 /home/c/cc25985/public_html/protected/components/DApi.php(239): CActiveRecord->exists('hidden>0 AND or...')
+#8 /home/c/cc25985/public_html/protected/components/DApi.php(77): DApi->_registerTreemenu()
+#9 /home/c/cc25985/yii/yiilite.php(1104): DApi->init()
+#10 /home/c/cc25985/yii/yiilite.php(1171): CModule->getComponent('d')
+#11 /home/c/cc25985/yii/yiilite.php(1228): CModule->preloadComponents()
+#12 /home/c/cc25985/yii/yiilite.php(56): CApplication->__construct(Array)
+#13 /home/c/cc25985/yii/yiilite.php(48): YiiBase::createApplication('CWebApplication', '/home/c/cc25985...')
+#14 /home/c/cc25985/public_html/index.php(52): YiiBase::createWebApplication('/home/c/cc25985...')
+#15 {main}
+REQUEST_URI=/catalog/stiralnye-mashiny
+HTTP_REFERER=https://aeg-technic.ru/catalog/stiralnye-mashiny
+---
+2022/03/15 13:22:51 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "ads.txt". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('ads.txt')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/ads.txt
+---
+2022/03/16 17:36:41 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Resource temporarily unavailable in /home/c/cc25985/yii/yiilite.php:8742
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(8714): CDbConnection->open()
+#1 /home/c/cc25985/yii/yiilite.php(8703): CDbConnection->setActive(true)
+#2 /home/c/cc25985/yii/yiilite.php(1104): CDbConnection->init()
+#3 /home/c/cc25985/yii/yiilite.php(1361): CModule->getComponent('db')
+#4 /home/c/cc25985/yii/yiilite.php(7759): CApplication->getDb()
+#5 /home/c/cc25985/yii/yiilite.php(7776): CActiveRecord->getDbConnection()
+#6 /home/c/cc25985/yii/yiilite.php(8282): CActiveRecord->getCommandBuilder()
+#7 /home/c/cc25985/public_html/protected/components/DApi.php(239): CActiveRecord->exists('hidden>0 AND or...')
+#8 /home/c/cc25985/public_html/protected/components/DApi.php(77): DApi->_registerTreemenu()
+#9 /home/c/cc25985/yii/yiilite.php(1104): DApi->init()
+#10 /home/c/cc25985/yii/yiilite.php(1171): CModule->getComponent('d')
+#11 /home/c/cc25985/yii/yiilite.php(1228): CModule->preloadComponents()
+#12 /home/c/cc25985/yii/yiilite.php(56): CApplication->__construct(Array)
+#13 /home/c/cc25985/yii/yiilite.php(48): YiiBase::createApplication('CWebApplication', '/home/c/cc25985...')
+#14 /home/c/cc25985/public_html/index.php(52): YiiBase::createWebApplication('/home/c/cc25985...')
+#15 {main}
+REQUEST_URI=/catalog/duxovye-shkafy?utm_source=yandex&utm_medium=cpc&utm_campaign=71906656&utm_content=11832097546&utm_term=%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9%20%D0%B4%D1%83%D1%85%D0%BE%D0%B2%D0%BE%D0%B9%20%D1%88%D0%BA%D0%B0%D1%84%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D1%81%D0%BF%D0%B1&yclid=15024955196565880831
+HTTP_REFERER=https://yandex.ru/
+---
+2022/03/16 21:22:39 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=511
+HTTP_REFERER=http://aeg-technic.ru/dCart/add?id=511
+---
+2022/03/16 21:30:19 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=502
+HTTP_REFERER=http://aeg-technic.ru/dCart/add?id=502
+---
+2022/03/16 21:30:45 [error] [exception.CHttpException.400] CHttpException: Некорректный запрос. in /home/c/cc25985/yii/yiilite.php:4092
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(7091): CController->filterAjaxOnly(Object(CFilterChain))
+#1 /home/c/cc25985/yii/yiilite.php(7046): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/c/cc25985/yii/yiilite.php(7058): CFilterChain->run()
+#3 /home/c/cc25985/yii/yiilite.php(7046): CFilter->filter(Object(CFilterChain))
+#4 /home/c/cc25985/yii/yiilite.php(3710): CFilterChain->run()
+#5 /home/c/cc25985/yii/yiilite.php(3695): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/c/cc25985/yii/yiilite.php(1799): CController->run('add')
+#7 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('dCart/add')
+#8 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#9 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#10 {main}
+REQUEST_URI=/dCart/add?id=464
+HTTP_REFERER=http://aeg-technic.ru/dCart/add?id=464
+---
+2022/03/17 15:30:41 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "stiralnye-mashiny". in /home/c/cc25985/yii/yiilite.php:3818
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(3700): CController->missingAction('stiralnye-mashi...')
+#1 /home/c/cc25985/yii/yiilite.php(1799): CController->run('stiralnye-mashi...')
+#2 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('catalog/stiraln...')
+#3 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#4 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/stiralnye-mashiny/utm_source=yandex&utm_medium=cpc&utm_campaign=71906648&utm_content=11832145922&utm_term=%D1%83%D0%B7%D0%BA%D0%B0%D1%8F%20%D1%81%D1%82%D0%B8%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C
+---
+2022/03/17 15:30:41 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "stiralnye-mashiny". in /home/c/cc25985/yii/yiilite.php:3818
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(3700): CController->missingAction('stiralnye-mashi...')
+#1 /home/c/cc25985/yii/yiilite.php(1799): CController->run('stiralnye-mashi...')
+#2 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('catalog/stiraln...')
+#3 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#4 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#5 {main}
+REQUEST_URI=/catalog/stiralnye-mashiny/utm_source=yandex&utm_medium=cpc&utm_campaign=71906648&utm_content=11832145922&utm_term=%D1%83%D0%B7%D0%BA%D0%B0%D1%8F%20%D1%81%D1%82%D0%B8%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C
+---
+2022/03/17 16:28:28 [warning] [application] Не удалось присвоить небезопасный атрибут "id" класса "feedback\models\FeedbackModel".
+in /home/c/cc25985/public_html/protected/modules/feedback/models/FeedbackModel.php (214)
+in /home/c/cc25985/public_html/protected/modules/feedback/controllers/AjaxController.php (68)
+in /home/c/cc25985/public_html/index.php (52)
+2022/03/17 16:58:20 [warning] [application] Не удалось присвоить небезопасный атрибут "id" класса "feedback\models\FeedbackModel".
+in /home/c/cc25985/public_html/protected/modules/feedback/models/FeedbackModel.php (214)
+in /home/c/cc25985/public_html/protected/modules/feedback/controllers/AjaxController.php (68)
+in /home/c/cc25985/public_html/index.php (52)
+2022/03/17 17:20:13 [warning] [application] Не удалось присвоить небезопасный атрибут "id" класса "feedback\models\FeedbackModel".
+in /home/c/cc25985/public_html/protected/modules/feedback/models/FeedbackModel.php (214)
+in /home/c/cc25985/public_html/protected/modules/feedback/controllers/AjaxController.php (68)
+in /home/c/cc25985/public_html/index.php (52)
+2022/03/18 14:40:00 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "javascript:;". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('javascript:;')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/javascript:;
+HTTP_REFERER=https://aeg-technic.ru/javascript:;
+---
+2022/03/18 19:45:41 [warning] [application] Не удалось присвоить небезопасный атрибут "id" класса "feedback\models\FeedbackModel".
+in /home/c/cc25985/public_html/protected/modules/feedback/models/FeedbackModel.php (214)
+in /home/c/cc25985/public_html/protected/modules/feedback/controllers/AjaxController.php (68)
+in /home/c/cc25985/public_html/index.php (52)
+2022/03/20 20:28:43 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "ads.txt". in /home/c/cc25985/yii/yiilite.php:1803
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(1719): CWebApplication->runController('ads.txt')
+#1 /home/c/cc25985/yii/yiilite.php(1236): CWebApplication->processRequest()
+#2 /home/c/cc25985/public_html/index.php(52): CApplication->run()
+#3 {main}
+REQUEST_URI=/ads.txt
+---
+2022/03/21 15:48:44 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Resource temporarily unavailable in /home/c/cc25985/yii/yiilite.php:8742
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(8714): CDbConnection->open()
+#1 /home/c/cc25985/yii/yiilite.php(8703): CDbConnection->setActive(true)
+#2 /home/c/cc25985/yii/yiilite.php(1104): CDbConnection->init()
+#3 /home/c/cc25985/yii/yiilite.php(1361): CModule->getComponent('db')
+#4 /home/c/cc25985/yii/yiilite.php(7759): CApplication->getDb()
+#5 /home/c/cc25985/yii/yiilite.php(7776): CActiveRecord->getDbConnection()
+#6 /home/c/cc25985/yii/yiilite.php(8282): CActiveRecord->getCommandBuilder()
+#7 /home/c/cc25985/public_html/protected/components/DApi.php(239): CActiveRecord->exists('hidden>0 AND or...')
+#8 /home/c/cc25985/public_html/protected/components/DApi.php(77): DApi->_registerTreemenu()
+#9 /home/c/cc25985/yii/yiilite.php(1104): DApi->init()
+#10 /home/c/cc25985/yii/yiilite.php(1171): CModule->getComponent('d')
+#11 /home/c/cc25985/yii/yiilite.php(1228): CModule->preloadComponents()
+#12 /home/c/cc25985/yii/yiilite.php(56): CApplication->__construct(Array)
+#13 /home/c/cc25985/yii/yiilite.php(48): YiiBase::createApplication('CWebApplication', '/home/c/cc25985...')
+#14 /home/c/cc25985/public_html/index.php(52): YiiBase::createWebApplication('/home/c/cc25985...')
+#15 {main}
+REQUEST_URI=/catalog/duxovye-shkafy
+---
+2022/03/22 02:06:35 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `tbl_migration`.
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (374)
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (208)
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (160)
+2022/03/22 02:06:35 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `tbl_migration`.
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (174)
+in /home/c/cc25985/public_html/protected/modules/common/components/base/WebModule.php (179)
+in /home/c/cc25985/public_html/protected/modules/common/components/base/WebModule.php (99)
+2022/03/22 02:06:35 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. Выполнявшийся SQL-запрос: CREATE TABLE `tbl_migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+).
+in /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php (174)
+in /home/c/cc25985/public_html/protected/modules/common/components/base/WebModule.php (179)
+in /home/c/cc25985/public_html/protected/modules/common/components/base/WebModule.php (99)
+2022/03/22 02:06:35 [error] [exception.CDbException] CDbException: CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away. The SQL statement executed was: CREATE TABLE `tbl_migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+) in /home/c/cc25985/yii/yiilite.php:9587
+Stack trace:
+#0 /home/c/cc25985/yii/yiilite.php(10023): CDbCommand->execute()
+#1 /home/c/cc25985/yii/cli/commands/MigrateCommand.php(499): CDbCommand->createTable('tbl_migration', Array)
+#2 /home/c/cc25985/yii/cli/commands/MigrateCommand.php(484): MigrateCommand->createMigrationHistoryTable()
+#3 /home/c/cc25985/yii/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory(-1)
+#4 /home/c/cc25985/yii/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /home/c/cc25985/yii/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /home/c/cc25985/yii/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 /home/c/cc25985/public_html/protected/modules/common/components/helpers/HDb.php(174): CConsoleCommandRunner->run(Array)
+#9 /home/c/cc25985/public_html/protected/modules/common/components/base/WebModule.php(179): common\components\helpers\HDb::migrate('application.mod...')
+#10 /home/c/cc25985/yii/yiilite.php(947): common\components\base\WebModule->preinit()
+#11 /home/c/cc25985/yii/yiilite.php(97): CModule->__construct('common/seo', Object(CommonModule), Array)
+#12 /home/c/cc25985/yii/yiilite.php(1053): YiiBase::createComponent(Array, 'common/seo', Object(CommonModule), Array)
+#13 /home/c/cc25985/public_html/protected/modules/common/components/base/WebModule.php(99): CModule->getModule('seo')
+#14 /home/c/cc25985/yii/yiilite.php(948): common\components\base\WebModule->configure(Array)
+#15 /home/c/cc25985/yii/yiilite.php(97): CModule->__construct('common', NULL, Array)
+#16 /home/c/cc25985/yii/yiilite.php(1051): YiiBase::createComponent(Array, 'common', NULL, Array)
+#17 /home/c/cc25985/public_html/protected/components/DApi.php(81): CModule->getModule('common')
+#18 /home/c/cc25985/yii/yiilite.php(1104): DApi->init()
+#19 /home/c/cc25985/yii/yiilite.php(1171): CModule->getComponent('d')
+#20 /home/c/cc25985/yii/yiilite.php(1228): CModule->preloadComponents()
+#21 /home/c/cc25985/yii/yiilite.php(56): CApplication->__construct(Array)
+#22 /home/c/cc25985/yii/yiilite.php(48): YiiBase::createApplication('CWebApplication', '/home/c/cc25985...')
+#23 /home/c/cc25985/public_html/index.php(52): YiiBase::createWebApplication('/home/c/cc25985...')
+#24 {main}
+REQUEST_URI=/catalog/stiralnye-mashiny?utm_source=yandex&utm_medium=cpc&utm_campaign=71906647&utm_content=11832096765&utm_term=%D1%81%D1%82%D0%B8%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D1%81%D0%B0%D0%BC%D0%B0%D1%80%D0%B5&yclid=2185962011384610815
+---
